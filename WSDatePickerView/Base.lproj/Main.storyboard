@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Uj-9Y-5er">
+                                <rect key="frame" x="103" y="128.5" width="291" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="startTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rai-Wg-8Di">
+                                <rect key="frame" x="20" y="133" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="endTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nj0-Xc-O3a">
+                                <rect key="frame" x="20" y="208" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YmE-F5-Oxo">
+                                <rect key="frame" x="107" y="203.5" width="287" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Uj-9Y-5er" secondAttribute="trailing" constant="20" id="7lA-2G-TmP"/>
+                            <constraint firstItem="nj0-Xc-O3a" firstAttribute="top" secondItem="Rai-Wg-8Di" secondAttribute="bottom" constant="54" id="LWV-vV-JvK"/>
+                            <constraint firstItem="nj0-Xc-O3a" firstAttribute="leading" secondItem="Rai-Wg-8Di" secondAttribute="leading" id="RfB-cs-y4z"/>
+                            <constraint firstItem="YmE-F5-Oxo" firstAttribute="centerY" secondItem="nj0-Xc-O3a" secondAttribute="centerY" id="T61-EB-GVk"/>
+                            <constraint firstItem="9Uj-9Y-5er" firstAttribute="leading" secondItem="Rai-Wg-8Di" secondAttribute="trailing" constant="10" id="VfE-KP-Jap"/>
+                            <constraint firstItem="Rai-Wg-8Di" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="Y0U-4g-fZj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YmE-F5-Oxo" secondAttribute="trailing" constant="20" id="gdr-a0-Wpt"/>
+                            <constraint firstItem="9Uj-9Y-5er" firstAttribute="centerY" secondItem="Rai-Wg-8Di" secondAttribute="centerY" id="iUa-Ob-LyM"/>
+                            <constraint firstItem="YmE-F5-Oxo" firstAttribute="leading" secondItem="nj0-Xc-O3a" secondAttribute="trailing" constant="20" id="tKn-rD-nTR"/>
+                            <constraint firstItem="Rai-Wg-8Di" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tSk-Eh-lFd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="endTimeTextField" destination="YmE-F5-Oxo" id="Y05-Bs-2po"/>
+                        <outlet property="startTimeTextField" destination="9Uj-9Y-5er" id="xnh-Nj-Zpm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
